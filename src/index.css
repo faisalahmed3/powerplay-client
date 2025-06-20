@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+.allBtn{
+    background-color: #F9C218;
+    font-family: "Lato", sans-serif;
+}
+.allBtn:hover{
+    background:none;
+    border: solid 1px #F9C218;
+    color: #F9C218;
+}
+.field-bg{
+    background: none;
+}
+
+.navBtns:hover{
+    background:none;
+    border: solid 0.5px #F9C218;
+    color: #F9C218;
+    border-radius: 10px;
+}
+
+.lato{
+    font-family: "Lato", sans-serif;
+}
+
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+.ss3{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.yText{
+    color: #F9C218;
+}
