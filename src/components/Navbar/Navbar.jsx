@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10); // Set threshold here
+      setScrolled(window.scrollY > 10); 
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -91,12 +91,14 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? (
             <div className="flex items-center gap-3">
-              <img
-                src={user.photoURL}
-                alt="User"
-                className="h-10 w-10 rounded-full border border-gray-300"
-                title={user.displayName || 'User'}
-              />
+              <Link to="/dashboard">
+                  <img
+                  src={user.photoURL}
+                  alt="User"
+                  className="h-10 w-10 rounded-full border border-gray-300"
+                  title={user.displayName || 'User'}
+                />
+              </Link>
               <button
                 onClick={logout}
                 className="btn allBtn text-black font-bold px-4 py-2 bg-yellow-400 hover:bg-yellow-300 transition"

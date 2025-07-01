@@ -22,6 +22,7 @@ import { Toaster } from 'react-hot-toast';
 import Create from './components/Create/Create.jsx';
 import Mine from './components/Mine/Mine.jsx';
 import EventDetails from './pages/EventDetails/EventDetails'; 
+import Dashboard from './pages/Dashboard/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
@@ -65,11 +66,21 @@ const router = createBrowserRouter([
           { path: '', element: <Mine /> },
         ],
       },
+
+      {
+        path: '/dashboard', 
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
+      },
     ],
   },
   { path: '/login', element: <Login /> },
   { path: '/register', element: <Register /> },
   { path: '*', element: <Error /> },
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
